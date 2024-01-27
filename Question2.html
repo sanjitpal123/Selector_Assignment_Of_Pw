@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*use a descendent selector to remove list style type bullet point and text underline*/
+        nav ul a {
+            list-style-type: none;
+            text-decoration: none;
+        }
+        /* use child selector to display menu list items inline*/
+        ul > li {
+            display: inline;
+        }
+        li + li {
+
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

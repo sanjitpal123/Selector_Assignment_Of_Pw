@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* target all the anchor tag and change the color to red*/
+        nav a {
+            color: red;
+
+        }
+        /*target first h2 tag and change text color and background color  */
+        nav > h2 {
+            color: white;
+            background-color: aquamarine;
+
+        }
+        /*target first p tag and change color to red*/
+        div + p {
+            color: red;
+        }
+
+        /*target the anchor tag with attribute "href" and change color to red and remove the text underline*/
+        a[href] {
+            color: red;
+            text-decoration: none;
+        }
+        a[class="active"] {
+            color: rgb(18, 18, 19);
+            text-decoration: underline;
+            
+        }
+        /*target the anchor tag with attribute"_self and change the background color */
+        a[target="_self"] {
+            background-color: blue;
+        }
+
+        /*target last p tag and add "..." after its value*/
+        p:last-child::after {
+            content: "...";
+        }
+
+        /* target all the bullet point change the color */
+        li::marker {
+            color: green;
+        }
+        p:nth-child(2n)::first-letter {
+            color: red;
+            font-size: 30px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_blank">About</a></li>
+                    <li><a href="#" target="_self">Service</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <p>Times of India</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officiis eum quas ratione voluptatum? Veritatis explicabo eum fugit provident minus voluptate in</p>
+
+            <p>read article</p>
+
+        </nav>
+    </header>
+</body>
+</html>
